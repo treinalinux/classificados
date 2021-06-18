@@ -10,10 +10,10 @@ class SignupsTest < ApplicationSystemTestCase
     fill_in 'Nome', with: 'Darth Vader'
     fill_in 'E-mail', with: 'vader@imperio.com'
     fill_in 'Senha', with: 'minhasenha'
-    fill_in 'Confirme sua senha', with: 'minhasenha'
+    fill_in 'Confirmação de senha', with: 'minhasenha'
 
     click_on 'Cadastrar'
 
-    assert_texgt 'Cadastro realizado com sucesso!'
+    assert_text 'Cadastro realizado com sucesso!'
   end
 end
