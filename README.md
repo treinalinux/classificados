@@ -39,6 +39,11 @@ Puma starting in single mode...
 *          PID: 92407
 * Listening on http://192.168.0.120:9000
 Use Ctrl-C to stop
+
+
+# migrate for workin tests
+$ rails db:migrate
+
 ```
 
 This README would normally document whatever steps are necessary to get the
