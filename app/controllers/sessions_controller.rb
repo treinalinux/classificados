@@ -17,4 +17,10 @@ class SessionsController < ApplicationController
       redirect_to new_session_path, alert: t('.invalid_credentials')
     end
   end
+
+  # destroy
+  def destroy
+    reset_session
+    redirect_to new_session_path, notice: t('.session_finished')
+  end
 end
