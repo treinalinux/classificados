@@ -1,0 +1,5 @@
+---
+pt-BR:
+  notification_mailer:
+    welcome:
+      subject: 'Bem vindo ao DioClassificados'

@@ -1,4 +1,13 @@
-<h1>Home Page </h1>
-<p>
-  Here write content
-</p>
+<h1>Anúncios</h1>
+
+<div>
+  <ul>
+    <% @ads.each do |ad| %>
+      <li>
+        <p><strong><%= ad.title %></strong></p>
+        <p><strong><%= ad.description %></strong></p>
+        <p><strong><%= ad.price %></strong></p>
+      </li>
+    <% end  %>
+  </ul>
+</div>

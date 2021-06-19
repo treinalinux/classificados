@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # Style/SymbolArray: Use `%i` or `%I` for an array of symbols.
   resources :users, only: %i[new create]
 
+  resources :ads, only: %i[new create]
+
   # login
   # get '/session/new', to: 'session#new'
   resources :sessions, only: %i[new create] do
