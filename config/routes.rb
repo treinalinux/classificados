@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   # login
   # get '/session/new', to: 'session#new'
-  resources :sessions, only: [:new]
+  resources :sessions, only: %i[new create]
 end
