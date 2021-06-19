@@ -4,10 +4,11 @@
   <ul>
     <% @ads.each do |ad| %>
       <li>
+        <p><%= link_to "Editar", edit_ad_path(ad) %></p>
         <p><strong><%= ad.title %></strong></p>
-        <p><strong><%= ad.description %></strong></p>
-        <p><strong><%= ad.price %></strong></p>
+        <p><%= ad.description %></p>
+        <p><%= ad.price %></p>
       </li>
-    <% end  %>
+    <% end %>
   </ul>
 </div>
